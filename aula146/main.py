@@ -1,6 +1,6 @@
 import sys
 from aula146.design import *
-from PyQt5.QtWidgets import  QMainWindow, QApplication, QFileDialog
+from PyQt5.QtWidgets import QMainWindow, QApplication, QFileDialog
 from PyQt5.QtGui import QPixmap
 
 
@@ -40,6 +40,7 @@ class Novo(QMainWindow, Ui_MainWindow):
             options=QFileDialog.DontUseNativeDialog
         )
         self.nova_imagem.save(imagem, 'PNG')
+
 
 if __name__ == '__main__':
     qt = QApplication(sys.argv)
